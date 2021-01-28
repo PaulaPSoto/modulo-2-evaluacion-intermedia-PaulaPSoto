@@ -9,6 +9,7 @@ console.log('El número aleatorio es:' + randomNumber);
 const introNumber = document.querySelector('.js-test');
 const game = document.querySelector('.js-numbrergame');
 const writeText = document.querySelector('.js-textgame');
+const total = 0;
 
 
 function handleButtonClick (event) {
@@ -24,6 +25,9 @@ function handleButtonClick (event) {
    }
 }
  introNumber.addEventListener('click', handleButtonClick);
+
+
+
 
 
 
