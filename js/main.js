@@ -6,6 +6,20 @@ function getRandomNumber(max) {
 const randomNumber = getRandomNumber(100);
 console.log('El número aleatorio es:' + randomNumber);
 
+const introNumber = document.querySelector('.js-test');
+const game = document.querySelector('.js-numbrergame');
+
+function handleButtonClick (event) {
+  const selectValue = game.value;
+  console.log('El número introducido es: ' + selectValue);
+//   faceInWeb.innerHTML = selectValue;
+//   colorfondo();
+//   cambiacara();
+  }
+
+
+ introNumber.addEventListener('click', handleButtonClick);
+
 
 
 // const face = document.querySelector ('.js-select');
@@ -31,21 +45,14 @@ console.log('El número aleatorio es:' + randomNumber);
 //   faceInWeb.innerHTML = selectValue;
 // }
 
-// function handleButtonClick (event) {
-//  colorfondo();
-//  cambiacara();
-// }
-
-
-// buttonChange.addEventListener ('click', handleButtonClick);
 
 
 
 
 
 
-// const changeface =
-console.log (face);
+
+
 
 
 // function handelButton () {
