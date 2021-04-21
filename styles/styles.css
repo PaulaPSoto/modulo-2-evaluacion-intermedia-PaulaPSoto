@@ -53,11 +53,23 @@
   font-size: 20px;
   margin: 15px;
 }
+.paragraph-test {
+  font-size: 15px;
+  text-align: center;
+}
 .number-test {
   font-size: 15px;
   text-align: center;
 }
 
+.try {
+  color: orangered;
+  font-size: 45px;
+}
+.winner {
+  color: fuchsia;
+  font-size: 45px;
+}
 @media all and (min-width: 768px) {
   .intronumber {
     font-size: 25px;

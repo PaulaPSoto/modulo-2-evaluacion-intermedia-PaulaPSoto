@@ -2,8 +2,7 @@
 const introNumber = document.querySelector(".js-test");
 const game = document.querySelector(".js-numbergame");
 const writeText = document.querySelector(".js-textgame");
-
-const total = 0;
+const numberattemps = document.querySelector(".number-test");
 
 // Prevent the form from being sent
 
@@ -26,14 +25,36 @@ function gameResult(newText) {
 }
 
 function handleButtonClick(event) {
-  const selectValue = game.value;
+  const selectValue = parseInt(game.value);
   console.log("El número introducido es: " + selectValue);
 
-  if (game === randomNumber) {
-    gameResult("¡Has Ganado!");
-  } else if (game !== randomNumber) {
-    gameResult("¡Sigue intentándolo!");
+  if (selectValue === randomNumber) {
+    gameResult("<i class='fas fa-trophy'></i>  ¡Has Ganado!");
+    {
+      writeText.classList.add("winner");
+    }
+  } else if (selectValue > randomNumber) {
+    gameResult(
+      " <i class='fas fa-fist-raised'> ¡El número introducido es más alto!"
+    );
+    {
+    }
+  } else if (selectValue < randomNumber) {
+    gameResult(
+      "<i class='fas fa-fist-raised'>¡El número introducido es más bajo!"
+    );
+    {
+    }
   }
+  attempts();
+}
+
+//number of attemps
+function attempts() {
+  let intents = parseInt(numberattemps.innerHTML);
+  console.log(numberattemps.innerHTML);
+  intents++;
+  numberattemps.innerHTML = intents;
 }
 
 introNumber.addEventListener("click", handleButtonClick);
