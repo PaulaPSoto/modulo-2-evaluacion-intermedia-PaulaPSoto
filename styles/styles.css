@@ -49,6 +49,7 @@
   background-color: cyan;
 }
 .text-test {
+  text-align: center;
   font-size: 20px;
   margin: 15px;
 }
