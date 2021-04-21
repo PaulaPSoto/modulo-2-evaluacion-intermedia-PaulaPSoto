@@ -20,17 +20,48 @@
   width: 45px;
   color: black;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .intronumber {
+  color: red;
   font-size: 20px;
   font-weight: bold;
 }
+.intronumberInput {
+  font-size: 20px;
+  text-align: center;
+  width: 40%;
+  height: 40px;
+  margin: 18px;
+  border: cyan solid;
+}
 
-.js-test {
+.button {
+  width: 30%;
+  height: 30px;
   padding: 2px 10px;
   font-size: 12px;
+  font-weight: bold;
   border-radius: 5px;
-  background-color: lightblue;
+  background-color: cyan;
 }
-.test {
-  border: 10px;
+.text-test {
+  font-size: 20px;
+  margin: 15px;
+}
+.number-test {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .intronumber {
+    font-size: 25px;
+  }
+  .intronumberInput {
+    font-size: 25px;
+  }
 }
